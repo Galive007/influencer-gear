@@ -24,11 +24,12 @@
 
 /* nav style */
 .nav{
-    max-width: 1228px;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 0;
+  /* display: flex; */
+  max-width: 1228px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
 }
 .nav a{
   text-decoration: none;
@@ -63,6 +64,42 @@
 }
 .nav-menu li i:hover{
   color: var(--btn-bg-color);
-  transform: scale(1.8);
-  
+  transform: scale(1.8); 
+}
+.cart{
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* responsive style */
+/* mobile screen */
+@media screen and (max-width:576px) {
+  .nav{
+    flex-direction: column;
+    padding: 15px;
+    align-items: start;
+    position: relative;
+  }
+  .sm-hide{
+    visibility: hidden;
+  }
+  .cart{
+    position: absolute;
+    left: calc(100% - 40px);
+    top: 20px;
+  }
+}
+
+/* tablet screen */
+@media screen and (min-width:577px) and (max-width:992px) {
+  .nav{
+    gap: 10px;
+    flex-direction: column;
+    padding: 15px;
+  }
 }

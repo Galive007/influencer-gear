@@ -7,4 +7,62 @@
 .poppins-font {
   font-family: "Poppins", sans-serif;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* common style */
+.flex{
+  display: flex;
+}
+:root{
+  --primary-color: #3A3A3A;
+  --btn-bg-color: #E02C6D;
+}
+
+/* nav style */
+.nav{
+    max-width: 1228px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.nav a{
+  text-decoration: none;
+}
+.nav-logo{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav-menu{
+  gap: 20px;
+}
+.nav-menu ul{
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+}
+.nav-menu li a{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav-menu li a:hover{
+  color: var(--btn-bg-color);
+  transform: scale(1.5);
+  border-bottom: 2px solid #E02C6D;
+  padding-bottom: 15px;
+}
+.nav-menu li i{
+  transition: scale 2s linear 3s;
+}
+.nav-menu li i:hover{
+  color: var(--btn-bg-color);
+  transform: scale(1.8);
+  
+}
